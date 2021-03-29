@@ -1,0 +1,825 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY businesscard "http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#"
+     xml:base="http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:businesscard="http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#">
+    <owl:Ontology rdf:about="http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#address -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;address">
+        <rdfs:range rdf:resource="&businesscard;Address"/>
+        <rdfs:domain rdf:resource="&businesscard;Business_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#allocated_under -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;allocated_under">
+        <rdfs:domain rdf:resource="&businesscard;Company_Registration_Code"/>
+        <rdfs:range rdf:resource="&businesscard;Juristinction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#classifies -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;classifies">
+        <rdfs:range rdf:resource="&businesscard;Business_Organization"/>
+        <rdfs:domain rdf:resource="&businesscard;Organization_Industry_Sector_Classification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#formerly_known_as -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;formerly_known_as">
+        <rdfs:domain rdf:resource="&businesscard;Autonomous_Entity"/>
+        <rdfs:range rdf:resource="&businesscard;Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#governing_law -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;governing_law">
+        <rdfs:domain rdf:resource="&businesscard;Country"/>
+        <rdfs:range rdf:resource="&businesscard;Juristinction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_capital -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_capital">
+        <rdfs:domain rdf:resource="&businesscard;Incorporated_Company"/>
+        <rdfs:range rdf:resource="&businesscard;Stockholder_Equity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_city -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_city">
+        <rdfs:domain rdf:resource="&businesscard;Address"/>
+        <rdfs:range rdf:resource="&businesscard;City"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_commercial_identity -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_commercial_identity">
+        <rdfs:range rdf:resource="&businesscard;Brand_Name"/>
+        <rdfs:domain rdf:resource="&businesscard;Business_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_control_of -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_control_of">
+        <rdfs:range rdf:resource="&businesscard;Incorporated_Company"/>
+        <rdfs:domain rdf:resource="&businesscard;Legal_Entity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_holding_of_another_company -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_holding_of_another_company">
+        <rdfs:domain rdf:resource="&businesscard;Incorporated_Company"/>
+        <rdfs:range rdf:resource="&businesscard;Publicly_Issued_Equity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_legal_control_of -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_legal_control_of">
+        <rdfs:domain rdf:resource="&businesscard;Legal_Entity"/>
+        <rdfs:range rdf:resource="&businesscard;Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_legal_name -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_legal_name">
+        <rdfs:domain rdf:resource="&businesscard;Legal_Entity"/>
+        <rdfs:range rdf:resource="&businesscard;Legal_Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_listing -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_listing">
+        <rdfs:domain rdf:resource="&businesscard;Exchange_Traded_Security"/>
+        <rdfs:range rdf:resource="&businesscard;Listing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_majority_holding_of_another_company -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_majority_holding_of_another_company">
+        <rdfs:domain rdf:resource="&businesscard;Incorporated_Company"/>
+        <rdfs:range rdf:resource="&businesscard;Publicly_Issued_Equity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_operating_address -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_operating_address">
+        <rdfs:range rdf:resource="&businesscard;Business_Address"/>
+        <rdfs:domain rdf:resource="&businesscard;Business_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_operation_address -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_operation_address">
+        <rdfs:domain rdf:resource="&businesscard;Incorporated_Company"/>
+        <rdfs:range rdf:resource="&businesscard;Juristinction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_partner -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_partner">
+        <rdfs:range rdf:resource="&businesscard;Legal_Entity"/>
+        <rdfs:domain rdf:resource="&businesscard;Partnership"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_primary_address -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_primary_address">
+        <rdfs:range rdf:resource="&businesscard;Business_Address"/>
+        <rdfs:domain rdf:resource="&businesscard;Business_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_registration_number -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_registration_number">
+        <rdfs:range rdf:resource="&businesscard;Company_Registration_Code"/>
+        <rdfs:domain rdf:resource="&businesscard;Incorporated_Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_sector_classification -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_sector_classification">
+        <rdfs:domain rdf:resource="&businesscard;Business_Organization"/>
+        <rdfs:range rdf:resource="&businesscard;Organization_Industry_Sector_Classification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_state -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_state">
+        <rdfs:domain rdf:resource="&businesscard;Address"/>
+        <rdfs:range rdf:resource="&businesscard;State"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_trading_name -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_trading_name">
+        <rdfs:domain rdf:resource="&businesscard;Business_Organization"/>
+        <rdfs:range rdf:resource="&businesscard;Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_zipcode -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;has_zipcode">
+        <rdfs:domain rdf:resource="&businesscard;Address"/>
+        <rdfs:range rdf:resource="&businesscard;Zipcode"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#headquartered_at -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;headquartered_at">
+        <rdfs:range rdf:resource="&businesscard;Business_Address"/>
+        <rdfs:domain rdf:resource="&businesscard;Incorporated_Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#identifier -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;identifier">
+        <rdfs:range rdf:resource="&businesscard;Business_Entity_Identifier"/>
+        <rdfs:domain rdf:resource="&businesscard;Business_Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#includes -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;includes">
+        <rdfs:domain rdf:resource="&businesscard;Address"/>
+        <rdfs:range rdf:resource="&businesscard;Country"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#incorporated_under -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;incorporated_under">
+        <rdfs:domain rdf:resource="&businesscard;Incorporated_Company"/>
+        <rdfs:range rdf:resource="&businesscard;Juristinction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#legally_controlled_by -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;legally_controlled_by">
+        <owl:inverseOf rdf:resource="&businesscard;has_legal_control_of"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#owns -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;owns">
+        <rdfs:domain rdf:resource="&businesscard;Business_Organization"/>
+        <rdfs:range rdf:resource="&businesscard;Publicly_Issued_Equity"/>
+        <rdfs:range rdf:resource="&businesscard;Stockholder_Equity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#registered_address -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;registered_address">
+        <rdfs:domain rdf:resource="&businesscard;Incorporated_Company"/>
+        <rdfs:range rdf:resource="&businesscard;Registered_Address"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#sponsored_by -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;sponsored_by">
+        <rdfs:range rdf:resource="&businesscard;Legally_Incorporated_Partnership"/>
+        <rdfs:domain rdf:resource="&businesscard;Special_Purpose_Vehicle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#trading_at -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;trading_at">
+        <rdfs:range rdf:resource="&businesscard;Business_Address"/>
+        <rdfs:domain rdf:resource="&businesscard;Incorporated_Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_building -->
+
+    <owl:DatatypeProperty rdf:about="&businesscard;has_building">
+        <rdfs:domain rdf:resource="&businesscard;Address"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_floor -->
+
+    <owl:DatatypeProperty rdf:about="&businesscard;has_floor">
+        <rdfs:domain rdf:resource="&businesscard;Address"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#has_street_address -->
+
+    <owl:DatatypeProperty rdf:about="&businesscard;has_street_address">
+        <rdfs:domain rdf:resource="&businesscard;Address"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#trading_as -->
+
+    <owl:DatatypeProperty rdf:about="&businesscard;trading_as">
+        <rdfs:domain rdf:resource="&businesscard;Incorporated_Company"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Address -->
+
+    <owl:Class rdf:about="&businesscard;Address"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Adult_Human_Being -->
+
+    <owl:Class rdf:about="&businesscard;Adult_Human_Being">
+        <rdfs:subClassOf rdf:resource="&businesscard;Human_Being"/>
+        <rdfs:subClassOf rdf:resource="&businesscard;Legal_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Autonomous_Entity -->
+
+    <owl:Class rdf:about="&businesscard;Autonomous_Entity">
+        <rdfs:subClassOf rdf:resource="&businesscard;Independent_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Bank -->
+
+    <owl:Class rdf:about="&businesscard;Bank">
+        <rdfs:subClassOf rdf:resource="&businesscard;Business_Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Brand_Name -->
+
+    <owl:Class rdf:about="&businesscard;Brand_Name">
+        <rdfs:subClassOf rdf:resource="&businesscard;Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Business_Address -->
+
+    <owl:Class rdf:about="&businesscard;Business_Address">
+        <rdfs:subClassOf rdf:resource="&businesscard;Address"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Business_Entity_Identifier -->
+
+    <owl:Class rdf:about="&businesscard;Business_Entity_Identifier"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Business_Organization -->
+
+    <owl:Class rdf:about="&businesscard;Business_Organization">
+        <rdfs:subClassOf rdf:resource="&businesscard;Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#City -->
+
+    <owl:Class rdf:about="&businesscard;City">
+        <rdfs:subClassOf rdf:resource="&businesscard;Geopolitical_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Classification -->
+
+    <owl:Class rdf:about="&businesscard;Classification"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Commercial_Bank -->
+
+    <owl:Class rdf:about="&businesscard;Commercial_Bank">
+        <rdfs:subClassOf rdf:resource="&businesscard;Incorporated_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Company_Limited_By_Guarantee -->
+
+    <owl:Class rdf:about="&businesscard;Company_Limited_By_Guarantee">
+        <rdfs:subClassOf rdf:resource="&businesscard;Legal_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Company_Registration_Code -->
+
+    <owl:Class rdf:about="&businesscard;Company_Registration_Code">
+        <rdfs:subClassOf rdf:resource="&businesscard;Registration_Code"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Continuant_Thing -->
+
+    <owl:Class rdf:about="&businesscard;Continuant_Thing"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Country -->
+
+    <owl:Class rdf:about="&businesscard;Country">
+        <rdfs:subClassOf rdf:resource="&businesscard;Geopolitical_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Derivatives_Listing -->
+
+    <owl:Class rdf:about="&businesscard;Derivatives_Listing">
+        <rdfs:subClassOf rdf:resource="&businesscard;Marketplace_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Equity -->
+
+    <owl:Class rdf:about="&businesscard;Equity"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Equity_Listing -->
+
+    <owl:Class rdf:about="&businesscard;Equity_Listing">
+        <rdfs:subClassOf rdf:resource="&businesscard;Listing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Exchange_Traded_Option -->
+
+    <owl:Class rdf:about="&businesscard;Exchange_Traded_Option">
+        <rdfs:subClassOf rdf:resource="&businesscard;Exchange_Traded_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Exchange_Traded_Security -->
+
+    <owl:Class rdf:about="&businesscard;Exchange_Traded_Security">
+        <rdfs:subClassOf rdf:resource="&businesscard;Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Exchange_Traded_Warrant -->
+
+    <owl:Class rdf:about="&businesscard;Exchange_Traded_Warrant">
+        <rdfs:subClassOf rdf:resource="&businesscard;Exchange_Traded_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Future_Instrument -->
+
+    <owl:Class rdf:about="&businesscard;Future_Instrument">
+        <rdfs:subClassOf rdf:resource="&businesscard;Exchange_Traded_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Geopolitical_Entity -->
+
+    <owl:Class rdf:about="&businesscard;Geopolitical_Entity"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Human_Being -->
+
+    <owl:Class rdf:about="&businesscard;Human_Being">
+        <rdfs:subClassOf rdf:resource="&businesscard;Autonomous_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Incorporated_Company -->
+
+    <owl:Class rdf:about="&businesscard;Incorporated_Company">
+        <rdfs:subClassOf rdf:resource="&businesscard;Business_Organization"/>
+        <rdfs:subClassOf rdf:resource="&businesscard;Legal_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Independent_Thing -->
+
+    <owl:Class rdf:about="&businesscard;Independent_Thing"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Issued_Share -->
+
+    <owl:Class rdf:about="&businesscard;Issued_Share">
+        <rdfs:subClassOf rdf:resource="&businesscard;Exchange_Traded_Security"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Joint_Stock_Company -->
+
+    <owl:Class rdf:about="&businesscard;Joint_Stock_Company">
+        <rdfs:subClassOf rdf:resource="&businesscard;Incorporated_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Juristinction -->
+
+    <owl:Class rdf:about="&businesscard;Juristinction">
+        <rdfs:subClassOf rdf:resource="&businesscard;Continuant_Thing"/>
+        <rdfs:subClassOf rdf:resource="&businesscard;Independent_Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Legal_Entity -->
+
+    <owl:Class rdf:about="&businesscard;Legal_Entity">
+        <rdfs:subClassOf rdf:resource="&businesscard;Autonomous_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Legal_Name -->
+
+    <owl:Class rdf:about="&businesscard;Legal_Name">
+        <rdfs:subClassOf rdf:resource="&businesscard;Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Legally_Incorporated_Partnership -->
+
+    <owl:Class rdf:about="&businesscard;Legally_Incorporated_Partnership">
+        <rdfs:subClassOf rdf:resource="&businesscard;Legal_Entity"/>
+        <rdfs:subClassOf rdf:resource="&businesscard;Partnership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Limited_Liability_Company -->
+
+    <owl:Class rdf:about="&businesscard;Limited_Liability_Company">
+        <rdfs:subClassOf rdf:resource="&businesscard;Legally_Incorporated_Partnership"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Listing -->
+
+    <owl:Class rdf:about="&businesscard;Listing">
+        <rdfs:subClassOf rdf:resource="&businesscard;Marketplace_Service"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Marketplace_Service -->
+
+    <owl:Class rdf:about="&businesscard;Marketplace_Service"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Municipality -->
+
+    <owl:Class rdf:about="&businesscard;Municipality">
+        <rdfs:subClassOf rdf:resource="&businesscard;Legal_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Name -->
+
+    <owl:Class rdf:about="&businesscard;Name"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Organization -->
+
+    <owl:Class rdf:about="&businesscard;Organization">
+        <rdfs:subClassOf rdf:resource="&businesscard;Autonomous_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Organization_Industry_Sector_Classification -->
+
+    <owl:Class rdf:about="&businesscard;Organization_Industry_Sector_Classification">
+        <rdfs:subClassOf rdf:resource="&businesscard;Classification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Partnership -->
+
+    <owl:Class rdf:about="&businesscard;Partnership">
+        <rdfs:subClassOf rdf:resource="&businesscard;Business_Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Personal_Name -->
+
+    <owl:Class rdf:about="&businesscard;Personal_Name">
+        <rdfs:subClassOf rdf:resource="&businesscard;Name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Private_Equity -->
+
+    <owl:Class rdf:about="&businesscard;Private_Equity">
+        <rdfs:subClassOf rdf:resource="&businesscard;Stockholder_Equity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Publicly_Issued_Equity -->
+
+    <owl:Class rdf:about="&businesscard;Publicly_Issued_Equity">
+        <rdfs:subClassOf rdf:resource="&businesscard;Stockholder_Equity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Publicly_Owned_Company -->
+
+    <owl:Class rdf:about="&businesscard;Publicly_Owned_Company">
+        <rdfs:subClassOf rdf:resource="&businesscard;Incorporated_Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Registered_Address -->
+
+    <owl:Class rdf:about="&businesscard;Registered_Address">
+        <rdfs:subClassOf rdf:resource="&businesscard;Address"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Registration_Code -->
+
+    <owl:Class rdf:about="&businesscard;Registration_Code"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#SICAV -->
+
+    <owl:Class rdf:about="&businesscard;SICAV">
+        <rdfs:subClassOf rdf:resource="&businesscard;Business_Organization"/>
+        <rdfs:subClassOf rdf:resource="&businesscard;Legal_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Security -->
+
+    <owl:Class rdf:about="&businesscard;Security"/>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Sole_Proprietorship -->
+
+    <owl:Class rdf:about="&businesscard;Sole_Proprietorship">
+        <rdfs:subClassOf rdf:resource="&businesscard;Business_Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Sovereign -->
+
+    <owl:Class rdf:about="&businesscard;Sovereign">
+        <rdfs:subClassOf rdf:resource="&businesscard;Legal_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Special_Purpose_Vehicle -->
+
+    <owl:Class rdf:about="&businesscard;Special_Purpose_Vehicle">
+        <rdfs:subClassOf rdf:resource="&businesscard;Business_Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#State -->
+
+    <owl:Class rdf:about="&businesscard;State">
+        <rdfs:subClassOf rdf:resource="&businesscard;Geopolitical_Entity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Stockholder_Equity -->
+
+    <owl:Class rdf:about="&businesscard;Stockholder_Equity">
+        <rdfs:subClassOf rdf:resource="&businesscard;Equity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Trust -->
+
+    <owl:Class rdf:about="&businesscard;Trust">
+        <rdfs:subClassOf rdf:resource="&businesscard;Business_Organization"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Warrant_Listing -->
+
+    <owl:Class rdf:about="&businesscard;Warrant_Listing">
+        <rdfs:subClassOf rdf:resource="&businesscard;Listing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#Zipcode -->
+
+    <owl:Class rdf:about="&businesscard;Zipcode">
+        <rdfs:subClassOf rdf:resource="&businesscard;Geopolitical_Entity"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.2.1782) http://owlapi.sourceforge.net -->
+

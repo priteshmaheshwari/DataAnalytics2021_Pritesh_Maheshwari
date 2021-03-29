@@ -1,0 +1,953 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY businesscard "http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#"
+     xml:base="http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:businesscard="http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#">
+    <owl:Ontology rdf:about="http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765675184000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765675184000">
+        <rdfs:label>has_legal_name</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765710863000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765679713000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765679713000">
+        <rdfs:label>legally_controlled_by</rdfs:label>
+        <owl:inverseOf rdf:resource="&businesscard;OWLObjectPropertyImpl_01334774765711241000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765680893000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765680893000">
+        <rdfs:label>has_majority_holding_of_another_company</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765701688000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765681278000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765681278000">
+        <rdfs:label>sponsored_by</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765686190000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765691155000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765687011000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765687011000">
+        <rdfs:label>governing_law</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765692507000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765695920000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765688222000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765688222000">
+        <rdfs:label>address</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765680508000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765688712000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765688712000">
+        <rdfs:label>owns</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765701688000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765703296000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765689914000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765689914000">
+        <rdfs:label>incorporated_under</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765692507000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765691680000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765691680000">
+        <rdfs:label>has_listing</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765678835000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765704903000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765692104000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765692104000">
+        <rdfs:label>has_city</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765680508000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765685010000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765692907000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765692907000">
+        <rdfs:label>trading_at</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765684528000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765693730000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765693730000">
+        <rdfs:label>has_commercial_identity</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765685788000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765694124000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765694124000">
+        <rdfs:label>has_partner</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765702864000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765697831000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765697831000">
+        <rdfs:label>has_primary_address</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765684528000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765702090000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765702090000">
+        <rdfs:label>has_zipcode</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765680508000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765682521000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765706599000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765706599000">
+        <rdfs:label>includes</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765680508000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765695920000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765707751000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765707751000">
+        <rdfs:label>identifier</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765723163000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765708507000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765708507000">
+        <rdfs:label>classifies</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765707371000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765709703000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765709703000">
+        <rdfs:label>has_control_of</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765710123000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765710123000">
+        <rdfs:label>has_registration_number</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765713289000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765710493000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765710493000">
+        <rdfs:label>has_sector_classification</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765707371000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765711241000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765711241000">
+        <rdfs:label>has_legal_control_of</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765685403000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765712408000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765712408000">
+        <rdfs:label>has_holding_of_another_company</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765701688000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765712870000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765712870000">
+        <rdfs:label>has_trading_name</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765720796000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765719536000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765719536000">
+        <rdfs:label>formerly_known_as</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765704117000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765720796000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765720274000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765720274000">
+        <rdfs:label>registered_address</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765705281000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765721901000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765721901000">
+        <rdfs:label>allocated_under</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765692507000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765713289000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765722278000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765722278000">
+        <rdfs:label>has_capital</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765703296000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765723941000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765723941000">
+        <rdfs:label>has_operating_address</rdfs:label>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765684528000"/>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765724780000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765724780000">
+        <rdfs:label>headquartered_at</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765684528000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765725472000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765725472000">
+        <rdfs:label>has_state</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765680508000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765708131000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLObjectPropertyImpl_01334774765725844000 -->
+
+    <owl:ObjectProperty rdf:about="&businesscard;OWLObjectPropertyImpl_01334774765725844000">
+        <rdfs:label>has_operation_address</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:range rdf:resource="&businesscard;OWLClassImpl_01334774765692507000"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLDataPropertyImpl_01334774765705657000 -->
+
+    <owl:DatatypeProperty rdf:about="&businesscard;OWLDataPropertyImpl_01334774765705657000">
+        <rdfs:label>trading_as</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLDataPropertyImpl_01334774765722785000 -->
+
+    <owl:DatatypeProperty rdf:about="&businesscard;OWLDataPropertyImpl_01334774765722785000">
+        <rdfs:label>has_street_address</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765680508000"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLDataPropertyImpl_01334774765723572000 -->
+
+    <owl:DatatypeProperty rdf:about="&businesscard;OWLDataPropertyImpl_01334774765723572000">
+        <rdfs:label>has_floor</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765680508000"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLDataPropertyImpl_01334774765724316000 -->
+
+    <owl:DatatypeProperty rdf:about="&businesscard;OWLDataPropertyImpl_01334774765724316000">
+        <rdfs:label>has_building</rdfs:label>
+        <rdfs:domain rdf:resource="&businesscard;OWLClassImpl_01334774765680508000"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765675002000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765675002000">
+        <rdfs:label>Incorporated_Company</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765678835000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765678835000">
+        <rdfs:label>Listing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765680109000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765679322000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765679322000">
+        <rdfs:label>Limited_Liability_Company</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765686190000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765680109000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765680109000">
+        <rdfs:label>Marketplace_Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765680508000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765680508000">
+        <rdfs:label>Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765681668000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765681668000">
+        <rdfs:label>Legal_Entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765704117000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765682135000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765682135000">
+        <rdfs:label>Classification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765682521000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765682521000">
+        <rdfs:label>Zipcode</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765689515000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765682908000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765682908000">
+        <rdfs:label>Registration_Code</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765683706000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765683706000">
+        <rdfs:label>Private_Equity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765703296000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765684142000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765684142000">
+        <rdfs:label>Personal_Name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765720796000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765684528000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765684528000">
+        <rdfs:label>Business_Address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765680508000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765685010000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765685010000">
+        <rdfs:label>City</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765689515000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765685403000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765685403000">
+        <rdfs:label>Organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765704117000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765685788000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765685788000">
+        <rdfs:label>Brand_Name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765720796000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765686190000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765686190000">
+        <rdfs:label>Legally_Incorporated_Partnership</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765702864000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765686620000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765686620000">
+        <rdfs:label>Exchange_Traded_Warrant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765704903000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765687400000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765687400000">
+        <rdfs:label>Equity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765687789000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765687789000">
+        <rdfs:label>Equity_Listing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765678835000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765689103000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765689103000">
+        <rdfs:label>Company_Limited_By_Guarantee</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765689515000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765689515000">
+        <rdfs:label>Geopolitical_Entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765690360000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765690360000">
+        <rdfs:label>Bank</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765690762000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765690762000">
+        <rdfs:label>Future_Instrument</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765704903000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765691155000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765691155000">
+        <rdfs:label>Special_Purpose_Vehicle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765692507000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765692507000">
+        <rdfs:label>Juristinction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765702483000"/>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765708906000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765693324000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765693324000">
+        <rdfs:label>Sole_Proprietorship</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765694662000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765694662000">
+        <rdfs:label>Municipality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765695127000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765695127000">
+        <rdfs:label>Sovereign</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765695525000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765695525000">
+        <rdfs:label>Publicly_Owned_Company</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765695920000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765695920000">
+        <rdfs:label>Country</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765689515000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765701688000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765701688000">
+        <rdfs:label>Publicly_Issued_Equity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765703296000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765702483000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765702483000">
+        <rdfs:label>Continuant_Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765702864000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765702864000">
+        <rdfs:label>Partnership</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765703296000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765703296000">
+        <rdfs:label>Stockholder_Equity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765687400000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765703738000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765703738000">
+        <rdfs:label>Trust</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765704117000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765704117000">
+        <rdfs:label>Autonomous_Entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765708906000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765704497000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765704497000">
+        <rdfs:label>Human_Being</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765704117000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765704903000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765704903000">
+        <rdfs:label>Exchange_Traded_Security</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765711614000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765705281000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765705281000">
+        <rdfs:label>Registered_Address</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765680508000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765706160000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765706160000">
+        <rdfs:label>Exchange_Traded_Option</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765704903000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765706992000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765706992000">
+        <rdfs:label>Joint_Stock_Company</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765707371000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765707371000">
+        <rdfs:label>Organization_Industry_Sector_Classification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765682135000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765708131000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765708131000">
+        <rdfs:label>State</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765689515000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765708906000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765708906000">
+        <rdfs:label>Independent_Thing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765709279000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765709279000">
+        <rdfs:label>Commercial_Bank</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765675002000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765710863000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765710863000">
+        <rdfs:label>Legal_Name</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765720796000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765711614000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765711614000">
+        <rdfs:label>Security</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765712036000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765712036000">
+        <rdfs:label>Derivatives_Listing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765680109000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765713289000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765713289000">
+        <rdfs:label>Company_Registration_Code</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765682908000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765713843000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765713843000">
+        <rdfs:label>SICAV</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765719122000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765714229000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765714229000">
+        <rdfs:label>Warrant_Listing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765678835000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765719122000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765719122000">
+        <rdfs:label>Business_Organization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765685403000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765719905000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765719905000">
+        <rdfs:label>Issued_Share</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765704903000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765720796000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765720796000">
+        <rdfs:label>Name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765721324000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765721324000">
+        <rdfs:label>Adult_Human_Being</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765681668000"/>
+        <rdfs:subClassOf rdf:resource="&businesscard;OWLClassImpl_01334774765704497000"/>
+    </owl:Class>
+    
+
+
+    <!-- http://tw.rpi.edu/orgpedia/businessentity/2012/1/21/businesscard.owl#OWLClassImpl_01334774765723163000 -->
+
+    <owl:Class rdf:about="&businesscard;OWLClassImpl_01334774765723163000">
+        <rdfs:label>Business_Entity_Identifier</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&rdfs;OWLDatatypeImpl_01334774765683306000">
+        <rdfs:label>Literal</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.2.1782) http://owlapi.sourceforge.net -->
+
